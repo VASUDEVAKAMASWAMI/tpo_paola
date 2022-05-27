@@ -1,0 +1,27 @@
+SITIO ALBERT EINSTEIN UNLIMITED
+El sitio posee 4 páginas:
+	- Inicio (index.html)
+	- CV (cv.html)
+	- Servicios (servicios.html)
+	- Contacto (contacto.html)
+Existen 3 carpetas:
+	- css(cv.css)
+	- img(varios archivos con imágenes e íconos)
+	- js(archivos: cv.js y FileSaver.js)
+Contiene:
+Barra de navegación (Inicio, CV, Servicios y Contacto)
+iframe en la página index.html
+
+CV.html con íconos para la descarga y selección de emails (los links son ficticios)
+También en CV.html existen anchors para navegar dentro de la misma página (sólo útiles si se completa con más contenidos).
+
+servicios.html contiene el slide-show, y también anchors (Matemática, Radiaciones, Satélites y Riesgo Biológico) bien inútiles con tan poco contenido.
+
+contacto.html contiene el formulario de contacto que solicita completar los campos: nombre, apellido, email, asunto y mensaje.
+El botón "enviar" llama a la función validar(nombre, apellido, email, asunto, mensaje) que controla los requisitos de la dirección de email mediante la función match que usa a la variable validRegex con la expresión regex.
+Al mismo tiempo, se controla con el método length que las otras cadenas (nombre, apellido, asunto y mensaje) no estén vacíos.
+Si la verificación es exitosa, se anuncia mediante un "alert" y se utiliza un objeto Blob que recoge, como un arreglo todos los datos del formulario, que se vuelcan a un archivo de texto que se descarga al usuario, como comprobante del envío, utilizando el complemento FileSaver().
+Finalmente, se limpian todos los datos del formulario.
+Si la verificación no tiene éxito, se informa mediante un "alert" y los datos del formulario NO se limpian para que el usuario corrija los datos.
+Los datos del formulario no se guardan en el servidor, porque no pude encontrar la manera de hacerlo.
+
