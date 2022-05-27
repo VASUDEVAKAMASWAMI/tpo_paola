@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f1c41f8039.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/cv.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <nav class="container">
+        <div class="row">
+            <div class="col"></div>
+                <img class="center" src="img/life_sciences.jpg" alt="foto" height="150px" width="100%" border="0">
+</div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col">
+                <a href="index.html"><h4 class="green"><i class="fa-solid fa-house"></i>Inicio</h4></a>
+            </div>
+            <div class="col">
+                <a href="cv.html"><h4 class="green"><i class="fa-solid fa-id-card"></i>CV</h4></a>
+            </div>
+            <div class="col">
+                <a href="servicios.html"><h4 class="green"><i class="fa-solid fa-atom"></i>Servicios</h4></a>
+            </div>
+            <div class="col">
+                <a href="contacto.html"><h4 class="green"><i class="fa-solid fa-handshake-angle"></i>Contacto</h4></a>
+            </div>
+        </div>
+        <br>
+    </nav>
+    <header class="container">
+        <div class="row">
+            <div class="col">
+                <img class="center" src="img/albert_llamada.jpg" alt="foto" height= "200px" border="0">
+            </div>
+            <div class="col">
+                <h1>Albert Einstein te escucha</h1><br><br>
+                <h6>Los avances se logran gracias a la inteligencia humana que, a pesar de todo,
+                     conserva sus creencias y prejuicios, lo cual puede afectar al
+                     progreso de la ciencia incluso entre las mentes más privilegiadas.</h6>
+                     <br><br>
+                <p>Si tienes algún comentario, sugerencia o idea:<b> ¡CONTÁCTAME!<b><br>
+                </p>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col">
+                        <h6>Recuerda siempre que:
+                            <ul>
+                                <li>La imaginación es más importante que el conocimiento.</li><br>
+                                <li>Es más fácil desintegrar un átomo que un prejuicio.</li><br>
+                                <li>Todos somos muy ignorantes, pero no todos ignoramos las mismas cosas.</li><br>
+                                <li>El problema del hombre no está en la bomba atómica, sino en su corazón.</li><br>
+                                <li>No debes tratar de convertirte en una persona de éxito, sino de valor.</li><br>
+                                <li>Dos cosas son infinitas: la estupidez humana y el universo; y no estoy seguro de lo segundo</li><br>
+                            </ul>
+                             </h6>
+            </div>
+            <div class="col">
+                <h3>Completa el siguiente formulario</h3>
+                <div>
+                <form id="form1">
+                <div class="form-group">
+                <label class="control-label" id="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" value="">
+                </div>
+                <div class="form-group">
+                <label class="control-label" id="apellido">Apellido:</label>
+                <input type="text" class="form-control" id="apellido" value="">
+                </div>
+                <div class="form-group">
+                <label class="control-label" id="email">Dirección de Email:</label>
+                <input type="email" class="form-control" id="email"  value="">
+                </div>
+                <div class="form-group">
+                <label class="control-label">Asunto o motivo:</label>
+                <input type="text" class="form-control" id="asunto" value="">
+                </div>
+                <div class="form-group"><label class="control-label">Mensaje:</label>
+                <textarea type="text" class="form-control" id="mensaje" ></textarea>
+                </div>
+                <div class="form-group"><button type="button" onclick="validar(nombre, apellido, email, asunto, mensaje)">Enviar</button>
+                </div>
+                </form>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer class="container">
+        <p class="">Copyright - Franco@2022 </p>
+    </footer>
+    </body>
+    <script src="js/cv.js"></script>
+    <script src="js/FileSaver.js"></script>
+</html>

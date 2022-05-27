@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+  }
+body {
+  font-family: "Source Sans Pro",sans-serif;
+  font-size: 16px;
+  line-height: 1.428571429;
+  color: #333;
+  background-color: #fff;
+  margin:0;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.control-label {
+  color: #232323;
+  font-size: 14px;
+  font-weight: 400;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.428571429;
+  color: #555;
+  background-color: #f8f8f8;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.text.form-control {
+  height: auto;
+}
+h6, .h6, h5, .h5, h4, .h4, h1, .h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--bs-heading-color);
+}
+h1.master {
+  font-family: "Lora";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+h1, .h1 {
+  font-size: calc(1.375rem + 1.5vw);
+  color: rgb(2, 20, 2);
+  font-weight: 800;
+}
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 2.5rem;
+  }
+}
+h4, .h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+@media (min-width: 1200px) {
+  h4, .h4 {
+    font-size: 1.5rem;
+  }
+}
+h5, .h5 {
+  font-size: 1.25rem;
+}
+h5, .center {
+  font-size: 1.25rem;
+  text-align: center;
+}
+h6, .h6 {
+  font-size: 1rem;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.col {
+    flex: 1 0 0%;
+}
+.col40 > * {
+  flex: 0 0 auto;
+  width: 40%;
+}
+.green {
+    color:green;
+}
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+.card-tittle{
+  text-align: left;
+}
+.card-text{
+text-align: left;
+}
+.ul-disc {
+  list-style-type: disc;
+}
+.ul-square {
+  list-style-type: square;
+}
+.ul-circle {
+  list-style-type: circle;
+  text-shadow: blue;
+  text-decoration-color: darkblue;
+}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}}
